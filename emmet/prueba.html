@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/emme_css.css">
+<body>
+
+	<h1>Ejemplos Elementos</h1>
+
+<h2>Anidar Elementos</h2>
+	<section>
+		<div class="ejemplo">
+			ul>li>a
+		</div>
+		<div class="result">
+		<xmp>
+			<ul>
+				<li><a href=""></a></li>
+			</ul>
+		</xmp>
+		</div>
+	</section>
+
+<h2>Elementos Hermanos</h2>
+<section>
+		<div class="ejemplo">
+			section+header+nav
+		</div>
+		<div class="result">
+		<xmp>
+			<section></section>
+			<header></header>
+			<nav></nav>
+		</xmp>
+	</section>
+
+	<h2>Repetir Elementos (*)</h2>
+<section>
+		<div class="ejemplo">
+			ul>li*3
+		</div>
+		<div class="result">
+		<xmp>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</xmp>
+	</section>
+
+	<h2>Atributo Clase</h2>
+<section>
+		<div class="ejemplo">
+			div.contenedor
+			.contenedor2
+		</div>
+		<div class="result">
+		<xmp>
+			<div class="contenedor"></div>
+			<div class="contenedor2"></div>
+		</xmp>
+	</section>
+
+	<h2>Multiples Clases</h2>
+<section>
+		<div class="ejemplo">
+			div.clase1.clase2.clasen
+		</div>
+		<div class="result">
+		<xmp>
+			<div class="clase1 clase2 clasen"></div>
+		</xmp>
+	</section>
+
+	<h2>Atributo Identificador (#)</h2>
+<section>
+		<div class="ejemplo">
+			nav#menu
+		</div>
+		<div class="result">
+		<xmp>
+			<nav id="menu"></nav>
+		</xmp>
+	</section>
+
+	<h2>Adicionar Texto {}</h2>
+<section>
+		<div class="ejemplo">
+			div{Lorem Ipsum Dolor} 
+			a{Click Aquí}
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<div>Lorem Ipsum Dolor</div>
+			<a href="">Click Aquí</a>∫
+		</xmp>
+	</section>
+
+
+	
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.result').hide();
+
+    $(".ejemplo").click(function(){
+        event.preventDefault();
+				/* Act on the event */
+				$(this).next('.result').slideToggle('slow');
+    });
+});
+</script>
+
+</html>

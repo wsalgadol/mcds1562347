@@ -1,0 +1,50 @@
+html{
+	background: -webkit-linear-gradient(#DAD8DA, #585057);
+	background: -moz-linear-gradient(#DAD8DA, #585057);
+	background: -ms-linear-gradient(#DAD8DA, #585057);
+}
+body{
+	font: 16px Arial;
+}
+h1{
+	background-color: #DCFFB9;
+	text-align: center;
+
+}
+h2{
+	background-color: 
+	color:#621121;
+	text-align: center;
+	font-size: 1.4em
+	font-weight:normal;
+	margin: 0px auto;
+	padding: 10px;
+	width: 420px;
+}
+section{
+	background-color: #EAD7A7
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
+    padding-left: 26%;
+}
+
+section div {
+    border: 1px solid #FCFFFF;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+section div.ejemplo {
+    background-color: #DCFFB9;
+    text-align: center;
+}
+
+section div.ejemplo:hover {
+    cursor: pointer;
+    background-color: #c1dea5;
+}
+
+section div.resultado {
+    font-size: 0.8em;
+}
