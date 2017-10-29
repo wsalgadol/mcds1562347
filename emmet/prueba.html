@@ -55,11 +55,18 @@
 <section>
 		<div class="ejemplo">
 			div.contenedor
-			.contenedor2
 		</div>
 		<div class="result">
 		<xmp>
 			<div class="contenedor"></div>
+		</xmp>
+	</section>
+	<section>
+		<div class="ejemplo">
+			.contenedor2
+		</div>
+		<div class="result">
+		<xmp>
 			<div class="contenedor2"></div>
 		</xmp>
 	</section>
@@ -90,11 +97,18 @@
 <section>
 		<div class="ejemplo">
 			div{Lorem Ipsum Dolor} 
-			a{Click Aquí}
 		</div>
 		<div id="test" class="result">
 		<xmp>
 			<div>Lorem Ipsum Dolor</div>
+		</xmp>
+	</section>
+	<section>
+		<div class="ejemplo">
+			a{Click Aquí}
+		</div>
+		<div id="test" class="result">
+		<xmp>
 			<a href="">Click Aquí</a>∫
 		</xmp>
 	</section>
@@ -103,7 +117,7 @@
 	
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('.result').hide();
