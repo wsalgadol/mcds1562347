@@ -7,7 +7,6 @@ body{
 	font: 16px Arial;
 }
 h1{
-	background-color: #DCFFB9;
 	text-align: center;
 
 }
@@ -26,25 +25,36 @@ section{
     margin: 20px auto;
     padding: 20px;
     width: 600px;
-    padding-left: 26%;
+    padding-left: 0;
 }
 
 section div {
-    border: 1px solid #FCFFFF;
+    border: 1px solid #080808;
     padding: 10px;
     margin-bottom: 4px;
 }
 
 section div.ejemplo {
-    background-color: #DCFFB9;
+    background-color: #7B889B;
     text-align: center;
 }
 
 section div.ejemplo:hover {
     cursor: pointer;
-    background-color: #c1dea5;
+    background-color: #8C99B2;
+}
+div.div{
+	background-color: #C3D7FF;
+	border: 1px solid #080808;
+    margin-bottom: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
 }
 
 section div.resultado {
     font-size: 0.8em;
+}
+xmp{
+	white-space: pre-line;
 }

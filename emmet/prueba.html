@@ -7,8 +7,8 @@
 <link rel="stylesheet" type="text/css" href="css/emme_css.css">
 <body>
 
-	<h1>Ejemplos Elementos</h1>
-
+<h1>Ejemplos Emmet</h1>
+<div class="div">
 <h2>Anidar Elementos</h2>
 	<section>
 		<div class="ejemplo">
@@ -22,7 +22,8 @@
 		</xmp>
 		</div>
 	</section>
-
+</div>
+<div class="div">
 <h2>Elementos Hermanos</h2>
 <section>
 		<div class="ejemplo">
@@ -35,7 +36,9 @@
 			<nav></nav>
 		</xmp>
 	</section>
+	</div>
 
+<div class="div">
 	<h2>Repetir Elementos (*)</h2>
 <section>
 		<div class="ejemplo">
@@ -50,7 +53,9 @@
 			</ul>
 		</xmp>
 	</section>
+</div>
 
+<div class="div">
 	<h2>Atributo Clase</h2>
 <section>
 		<div class="ejemplo">
@@ -70,7 +75,9 @@
 			<div class="contenedor2"></div>
 		</xmp>
 	</section>
+</div>
 
+<div class="div">
 	<h2>Multiples Clases</h2>
 <section>
 		<div class="ejemplo">
@@ -81,7 +88,9 @@
 			<div class="clase1 clase2 clasen"></div>
 		</xmp>
 	</section>
+</div>
 
+<div class="div">
 	<h2>Atributo Identificador (#)</h2>
 <section>
 		<div class="ejemplo">
@@ -92,7 +101,9 @@
 			<nav id="menu"></nav>
 		</xmp>
 	</section>
+</div>
 
+<div class="div">
 	<h2>Adicionar Texto {}</h2>
 <section>
 		<div class="ejemplo">
@@ -112,8 +123,255 @@
 			<a href="">Click Aquí</a>∫
 		</xmp>
 	</section>
+</div>
 
 
+<div class="div">
+	<h2>Personalizar Atributos []</h2>
+<section>
+		<div class="ejemplo">
+			a[href=www.google.com]
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<a href="www.google.com"></a>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Números Consecutivos $</h2>
+<section>
+		<div class="ejemplo">
+			ul>li.num$*3
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<ul>
+				<li class="num1"></li>
+				<li class="num2"></li>
+				<li class="num3"></li>
+			</ul>
+		</xmp>
+	</section>
+	<section>
+		<div class="ejemplo">
+			section>article.sec$$$*3
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<section>
+				<article class="sec001"></article>
+				<article class="sec002"></article>
+				<article class="sec003"></article>
+			</section>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Dirección Números Consecutivos (@-)</h2>
+<section>
+		<div class="ejemplo">
+			ul>li.num$@-*3
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<ul>
+				<li class="num3"></li>
+				<li class="num2"></li>
+				<li class="num1"></li>
+			</ul>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Base Números Consecutivos (@n)</h2>
+<section>
+		<div class="ejemplo">
+			ul>li.num$@3*4
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<ul>
+				<li class="num3"></li>
+				<li class="num4"></li>
+				<li class="num5"></li>
+				<li class="num6"></li>
+			</ul>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Subir Nivel ()</h2>
+<section>
+		<div class="ejemplo">
+			section>article>div^p
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<section>
+				<article>
+					<div></div>
+				</article>
+				<p></p>
+			</section>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Agrupar Elementos()</h2>
+<section>
+		<div class="ejemplo">
+			(header>nav)(section>article)
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<header>
+				<nav></nav>
+			</header>
+			<section>
+				<article></article>
+			</section>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Generador “Lorem Ipsum”</h2>
+<section>
+		<div class="ejemplo">
+			lorem
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, eligendi officia et dolorem cumque consequatur magni asperiores officiis! Minima, rerum! Perferendis eligendi voluptate, delectus ullam accusamus minima? Laborum, corrupti.
+		</xmp>
+	</section>
+<section>
+		<div class="ejemplo">
+			lorem20
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas maxime ab harum deleniti ratione corrupti distinctio doloremque ullam earum.
+		</xmp>
+	</section>
+<section>
+		<div class="ejemplo">
+			lorem*5
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, harum ex voluptatem error, cumque repellat? Animi minus dolor fugit, vitae ducimus iste laborum, sint blanditiis quod perspiciatis eius non porro.</div>
+			<div>Non aliquid, hic debitis. Culpa velit, eius iusto quas harum voluptates praesentium. Esse quaerat voluptatem, temporibus ipsam reiciendis vero odio quis tempore nobis. Iure incidunt, suscipit, culpa at aliquam eius.</div>
+			<div>Porro expedita, vel voluptates sed natus libero neque illum id hic voluptatum, nostrum blanditiis facere autem, delectus magni, quod. Assumenda nobis rem possimus sit sequi aspernatur voluptas deleniti quaerat enim?</div>
+			<div>Quos perspiciatis asperiores temporibus animi aspernatur cumque maiores quam! Illo, inventore nihil qui deserunt soluta in dolorem, dolor autem consectetur, eum optio nemo explicabo, accusantium velit itaque? Nulla a, omnis.</div>
+			<div>Magnam alias harum, facere minus fugit necessitatibus temporibus corporis neque id impedit, sint laborum provident eligendi, odio cupiditate eum consequuntur dolorum culpa molestias minima! Doloribus quaerat sed, esse debitis dolorem.</div>
+		</xmp>
+	</section>
+</div>
+
+<div class="div">
+	<h2>Documentos HTML</h2>
+<section>
+		<div class="ejemplo">
+			html:xs
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+			<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+			<head>
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html>
+		</xmp>
+	</section>
+	
+	<section>
+		<div class="ejemplo">
+			html:xt
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+			<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+			<head>
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html>
+		</xmp>
+	</section>
+
+	<section>
+		<div class="ejemplo">
+			html:4s
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+			<html lang="en">
+			<head>
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html>
+		</xmp>
+	</section>
+
+	<section>
+		<div class="ejemplo">
+			html:4t
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+			<html lang="en">
+			<head>
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html>
+		</xmp>
+	</section>
+	
+	<section>
+		<div class="ejemplo">
+			html:5
+		</div>
+		<div id="test" class="result">
+		<xmp>
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html>
+		</xmp>
+	</section>
+</div>
 	
 </body>
 
